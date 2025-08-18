@@ -1,24 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="jogo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo da Memória</title>
+  <link rel="stylesheet" href="jogo.css" />
 </head>
 <body>
-    
-<div>
-    <h1>
-        Seja bem-vindo 
-        <br>
-    este é um jogo de momoria, será que consegue?
-    </h1>
-</div>
-<div>
-    <button class="jogo" ><a href="index.html">começar</a></button>
-</div>
+  <div class="conteiner">
 
-<script src="jogo.js"></script>
+    <!-- Tela inicial -->
+    <div id="menu">
+      <h1>🧠 Jogo da Memória</h1>
+      <button id="btnStart">▶️ Iniciar Jogo</button>
+      <button id="btnRules">📜 Regras</button>
+      <button id="btnScores">🏅 Pontuações</button>
+    </div>
+
+    <!-- Tela de regras -->
+    <div id="rulesScreen" class="hidden">
+      <h2>📜 Regras do Jogo</h2>
+      <p>🔹 O objetivo é encontrar todos os pares de cartas com o menor número de movimentos possível.</p>
+      <p>🔹 Clique em duas cartas para revelá-las.</p>
+      <p>🔹 Se forem iguais, você faz um ponto! Se não, as cartas viram de novo.</p>
+      <p>🔹 Tente terminar o jogo com o menor número de movimentos.</p>
+      <button class="btnBackMenu">🔙 Voltar ao Menu</button>
+    </div>
+
+    <!-- Tela do jogo -->
+    <div id="gameScreen" class="hidden">
+      <div id="score">Movimentos: 0</div>
+      <div class="game-board" id="gameBoard"></div>
+      <button id="restartButton">🔄 Reiniciar</button>
+      <button class="btnBackMenu">🔙 Voltar ao Menu</button>
+      <div id="finalMessage" class="hidden">
+        🎉 Você terminou o jogo com <span id="finalMoves"></span> movimentos<br />
+        🏆 Sua pontuação final: <span id="finalPoints"></span> pontos!
+      </div>
+    </div>
+
+    <!-- Tela de pontuações -->
+   <div id="scoresScreen" class="hidden">
+   <h2>🏅 Suas Pontuações</h2>
+   <ul id="scoreList"></ul>
+   <button class="btnBackMenu">🔙 Voltar ao Menu</button>
+   </div>
+   </div>
+  <script src="jogo.js"></script>
 </body>
 </html>

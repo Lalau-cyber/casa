@@ -13,17 +13,21 @@ body {
   max-width: 600px;
   height: 650px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px;    
   background-color: #000000b3; 
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
-  h1 {
+  .h1-mover {
     margin-bottom: 20px;
-    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     text-align: center;
+    padding: 60px;
+    font-size: 2.5rem;
+    position: relative;
+    top: 20px; /* Ajuste o valor para a nova posição */
+    transition: top 0.5s ease; /* Adiciona uma transição suave */
   }
   
   .game-board {
@@ -70,7 +74,7 @@ body {
   }
   
   #restartButton:hover {
-    background-color: #fd3232;
+    background-color: #000000;
   }
   
   #score {
@@ -88,20 +92,55 @@ body {
   .hidden {
     display: none;
   }
-  .jogo{
+  #btnStart{
 
-border-radius: 15px;
-background-color: #ec8686;
-padding: 10px 20px;
-font-size: 40px;
-margin-top: 20px;
-cursor: pointer;
-margin: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    position: relative;
+    bottom: -30px; /* Ajuste a posição vertical do botão de regras */   
+  }
+  #btnRules{
+ font-size: 1.5rem;
+ border-radius: 15px;
+ position: relative;
+ bottom: -30px; /* Ajuste a posição vertical do botão de regras */
+  }
+  
+  #btnScores{
+    font-size: 1.5rem;
+    border-radius: 15px;
+    position: relative;
+    bottom: -30px; 
+  }
+  
+  a{
 text-decoration: none;
-align-items: center;
-
+ 
+  }
+  .jogo{
+    font-size: 1.5rem;
+    border-radius: 15px;
 
   }
 
+  .hh11{
 
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       font-size: 2.5rem;
+       padding: 150px;
+       max-width: 600px;
+      
+  }
+
+.title-container{
+ max-width: 600px;
+  height: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000b3; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
+}

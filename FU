@@ -1,0 +1,8 @@
+<div id="gameScreen" class="hidden">
+    <div id="score">Movimentos: 0</div>
+    <div class="game-board" id="gameBoard"></div>
+    <button id="restartButton">🔄 Reiniciar</button>
+    <div id="finalMessage" class="hidden">
+      🎉 Você terminou o jogo com <span id="finalMoves"></span> movimentos<br />
+      🏆 Sua pontuação final: <span id="finalPoints"></span> pontos!
+    </div>
