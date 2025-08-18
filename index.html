@@ -6,9 +6,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jogo da Memória</title>
-  <link rel="stylesheet" href="css.css" />
+  <link rel="stylesheet" href="jogo.css" />
 </head>
 <body>
+  <div class="conteiner">
   <h1>🧠 Jogo da Memória</h1>
   
   <div id="score">Movimentos: 0</div>
@@ -18,9 +19,13 @@
   <button id="restartButton">🔄 Reiniciar</button>
   
   <div id="finalMessage" class="hidden">
-    🎉 Você terminou o jogo com <span id="finalMoves"></span> movimentos<br />
-    🏆 Sua pontuação final: <span id="finalPoints"></span> pontos!
+   <!-- 🎉 Você terminou o jogo com <span id="finalMoves"></span> movimentos<br />
+    🏆 Sua pontuação final: <span id="finalPoints"></span> pontos!-->
+
+    <button class="final"><a href="final.html">ver pontuaçãos</a></button>
+
   </div>
-    <script src="js.js"></script>
+  </div>
+    <script src="jogo.js"></script>
 </body>
 </html>

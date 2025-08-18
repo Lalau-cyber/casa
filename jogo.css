@@ -1,0 +1,107 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #f18f8f;
+    margin: 0;
+    padding: 20px;
+    background-image: url(https://img.freepik.com/vetores-premium/fundo-colorido-vetorial-com-frutas-e-bagas_575838-1514.jpg?semt=ais_hybrid&w=740&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+.conteiner{
+  max-width: 600px;
+  height: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000b3; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #91c6e9;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    user-select: none;
+    transition: transform 0.3s;
+  }
+  
+  .card.flipped {
+    background-color: #ff3e3e;
+    cursor: default;
+  }
+  
+  .card.matched {
+    background-color: #7dff5c;
+    cursor: default;
+  }
+  
+  #restartButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #restartButton:hover {
+    background-color: #fd3232;
+  }
+  
+  #score {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  #finalMessage {
+    margin-top: 20px;
+    font-size: 2.3rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .jogo{
+
+border-radius: 15px;
+background-color: #ec8686;
+padding: 10px 20px;
+font-size: 40px;
+margin-top: 20px;
+cursor: pointer;
+margin: 10px 20px;
+text-decoration: none;
+align-items: center;
+
+
+  }
+
+
+  
